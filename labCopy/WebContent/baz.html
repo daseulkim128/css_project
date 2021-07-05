@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Baz</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/baz.css" >
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  
+  
+  <script type="text/javascript">
+  $(function(){
+	  $(window).scroll(function(){
+	    var wscrollTop = $(window).scrollTop();
+	    if(wscrollTop >= 0 && $('section.baz-section2').offset().top > wscrollTop){
+	    	$('div.process-line').css('top', '0px');
+	    } else if($('section.baz-section2').offset().top <= wscrollTop && wscrollTop < $('section.baz-section3').offset().top){
+	    	$('div.process-line').css('top', '64px');
+	    } else if($('section.baz-section3').offset().top <= wscrollTop && wscrollTop < $('section.baz-section4').offset().top){
+	    	$('div.process-line').css('top', '128px');
+	    } else if($('section.baz-section4').offset().top <= wscrollTop && wscrollTop < $('section.baz-section5').offset().top){
+	    	$('div.process-line').css('top', '192px');
+	    } else if (wscrollTop >= $('section.baz-section5').offset().top){
+	    	$('div.process-line').css('top', '256px');
+	    }
+	  });
+	});
+  
+  </script>
+  
+</head>
+
+<body>
+
+<div class="right-bar">
+	<div class="full-line"></div>
+	<div class="process-line"></div>
+</div>
+
+<header class="header">
+	<a href="baz.html" class="logo"><img src="images/baz/GNB_LOGO.png"></a>
+	<ul class="menu-ul">
+		<li><a href="javascript:;">BAZ International</a></li>	
+		<li><a href="javascript:;">BUSINESS</a></li>	
+		<li><a href="javascript:;">PROJECT</a></li>	
+		<li><a href="javascript:;">CONTACT</a></li>	
+	</ul>
+</header>
+<section class="baz-section1" id="baz-section1">
+	<div class="content-wrap">
+		<img class="symbol" src="images/baz/symbol.png" style="width: 330px; height: 304px;">
+		<img class="logo" src="images/baz/logo.png" style="width: 330px; height: 304px;">
+	</div>
+</section>
+
+<section class="baz-section2" id="baz-section2">
+	<div class="content-wrap">
+		<img class="img_park" src="images/baz/img_park.png" style="position:absolute; width:600px; height:600px">
+		<div class="text-wrap">
+			<div class="title">
+				<span class="text">Global Sports</span>
+				<span class="text">Marketing</span>
+				<span class="text">Company.</span>
+			</div>
+			<div class="content">
+				<span class="text">BAZ INTERNATIONAL</span>
+				<span class="text">스포츠마케팅의 선진화를 주도합니다</span>
+			</div>
+			<img class="nomal1" src="images/baz/nomal1.png" style="width: 184px; height: 42px;">
+			<img class="nomal2" src="images/baz/nomal2.png" style="width: 184px; height: 42px;">
+		</div>
+	</div>
+</section>
+
+<section class="baz-section3" id="baz-section3">
+	<div class="content-wrap">
+		<img class="ball" src="images/baz/ball.png" style="position: absolute; width: 497px; height: 494px;">
+		<div class="text-wrap-left">
+			<span class="title">Our Business</span>
+			<span class="text">글로벌 스포츠 이벤트의 기획과 스포츠를</span>
+			<span class="text">매개로한 혁신적인 콘텐츠를 만들어 나갑니다</span>
+			<img class="nomal3" src="images/baz/nomal3.png" style="width: 184px; height: 40px;">
+		</div>
+		<div class="text-wrap-right">
+			<div class="text-div">
+				<span class="text">Global Sports Event</span>
+			</div>
+			<div class="text-div">
+				<span class="text">Golf School & Academy</span>
+			</div>
+			<div class="text-div">
+				<span class="text">Contents</span>
+			</div>
+			<div class="text-div">
+				<span class="text">Sports Leisure</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="baz-section4" >
+	<div class="content-wrap">
+		<span class="title">Project.</span>	
+		<img class="nomal3" src="images/baz/nomal3.png" style="width: 184px; height: 40px;">
+		<div class="card-wrap">
+			<div class="card-div">
+				<div class="card-img">
+					<img class="rectangle" src="images/baz/rectangle.png" style="width: 283px; height: 298px;">
+				</div>				
+				<div class="card-text">
+					<span class="text">OK저축은행 박세리</span>
+					<span class="text">INVITATIONAL</span>
+				</div>
+			</div>
+			<div class="card-div">
+				<div class="card-img">
+					<img class="rectangle" src="images/baz/rectangle.png" style="width: 283px; height: 298px;">
+				</div>
+				<div class="card-text">
+					<span class="text">박세리배 전국 초등학생</span>
+					<span class="text">골프대회</span>
+				</div>
+			</div>
+			<div class="card-div">
+				<div class="card-img">
+					<img class="rectangle" src="images/baz/rectangle.png" style="width: 283px; height: 298px;">
+				</div>
+				<div class="card-text">
+					<span class="text">AJGA Se Ri Pak</span>
+					<span class="text">Junior Championship</span>
+				</div>
+			</div>
+			<div class="card-div">
+				<div class="card-img">
+					<img class="rectangle" src="images/baz/rectangle.png" style="width: 283px; height: 298px;">
+				</div>
+				<div class="card-text">
+					<span class="text">Global Golf Tournament</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="baz-section5">
+	<div class="back" style="background-image: url('images/baz/contact_img.png');">
+		<div class="content-wrap">
+			<div class="text-wrap-left">
+				<span class="title">Contact.</span>
+				<div class="text-groups">			
+					<div class="text-group1">				
+						<span class="text2">문의를 남겨주시면 확인 후 </span>
+						<span class="text2">빠른 시일안에 회신드리겠습니다</span>
+					</div>
+					<div class="text-group2">				
+						<img class="google" src="images/baz/google.png" style="width: 184px; height: 42px;">
+						<span class="text2">서울특별시 강남구 학동로 343, 8층</span>
+					</div>
+					<div class="text-group3">				
+						<img class="youtube" src="images/baz/youtube.png" style="width: 184px; height: 42px;">
+						<span class="text2">박세리가 간다</span>
+					</div>
+				</div>
+			</div>
+			<div class="text-wrap-right">
+				<input type="text" class="input" placeholder="이메일" />
+				<input type="text" class="input" placeholder="회사명/이름" />
+				<textarea placeholder="내용"></textarea>
+				
+				<div class="btn-wrap">
+					<div class="agree-wrap">
+						<span class="check-wrap">
+							<input type="checkbox" id="agree" />
+							<label for="agree">개인정보 활용동의안</label>
+						</span>
+					</div>
+					<div class="submit-wrap">
+						<a href="#" class="submit-btn">보내기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="content-wrap">
+		<a href="baz.html" class="logo"><img src="images/baz/GNB_LOGO.png"></a>
+		<div class="text-wrap">
+			<span class="text">COPYRIGHT© 2020 BAZ International. ALL RIGHTS RESERVED</span>
+			<span class="text">대표자 : 이치훈, 박세리    |  서울특별시 강남구 학동로 343, 8층</span>
+		</div>
+	</div>
+</footer>
+
+
+</body>
+</html>
